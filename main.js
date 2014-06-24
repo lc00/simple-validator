@@ -38,9 +38,9 @@ alert("valid birth date");
 do{
 	state = prompt("What is the abbreviation of your state");
 	stateCap = state.toUpperCase();
-} while (state.length !== 2 || state !== stateCap);
+} while (state.length !== 2 || state !== stateCap || 65<=stateCap[0] || stateCap[0]<=90 ||  65<=stateCap[1] || stateCap[1]<=90  );
 
 do{
 	married = prompt("Are you married");
 
-} while( married !== "YES" || married !=="Yes" || married !=="yes" || married !== "no" );
+} while( married!== "YES" && married!=="Yes" && married!=="yes" && married!== "no" );
